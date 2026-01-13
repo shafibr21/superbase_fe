@@ -1,9 +1,8 @@
-import React from 'react'
 import { Button } from './ui/button'
 
 const Footer = () => {
   return (
-    <footer className="bg-white/50 backdrop-blur border-t border-border mt-16 py-8">
+    <footer className="bg-white/50 border-t border-border mt-16 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs sm:text-sm text-black text-center sm:text-left w-69.25 h-3.75 font-semibold">
