@@ -42,15 +42,15 @@ const DatePickerModal = ({
 
   return (
     <div 
-      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 "
       onClick={onClose}
     >
       <div 
-        className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8"
+        className="bg-white rounded-md shadow-2xl max-w-md w-full p-8"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Title */}
-        <h2 className="text-2xl font-bold text-center mb-8">
+        <h2 className="text-2xl text-center mb-8">
           {title}
         </h2>
 
@@ -110,11 +110,11 @@ const DatePickerModal = ({
 
         {/* Note Section */}
         {weeks && selectedDays.length > 0 && (
-          <div className="bg-muted/30 rounded-lg p-4 mb-6">
+          <div className="rounded-lg p-4 mb-6">
             <p className="text-sm text-muted-foreground leading-relaxed">
               <span className="font-semibold">NB:</span> You've chosen a {weeks}-week schedule starting on {formattedDate}, 
               with sessions on {selectedDays.join(', ')}.
-              <br /><br />
+              <br />
               We'll automatically set your end date, and you can renew whenever you like — no worries!
             </p>
           </div>
@@ -124,13 +124,13 @@ const DatePickerModal = ({
         <div className="flex gap-4">
           <button
             onClick={onClose}
-            className="flex-1 py-3 text-red-500 font-semibold hover:bg-red-50 rounded-sm transition-colors"
+            className="flex-1 py-3 text-red-500 hover:bg-red-50 rounded-sm transition-colors"
           >
             CANCEL
           </button>
           <button
             onClick={handleConfirm}
-            className="flex-1 py-3 bg-primary text-primary-foreground font-semibold rounded-sm hover:bg-primary/90 transition-colors"
+            className="flex-1 py-3 bg-primary text-primary-foreground  rounded-sm hover:bg-primary/90 transition-colors"
           >
             CONFIRM
           </button>
